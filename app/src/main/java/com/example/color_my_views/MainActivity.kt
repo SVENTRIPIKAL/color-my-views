@@ -34,7 +34,8 @@ class MainActivity : AppCompatActivity() {
             val list: List<View> = listOf(
                 boxOneText, boxTwoText,
                 boxThreeText, boxFourText,
-                boxFiveText, mainConstraintLayout
+                boxFiveText, mainConstraintLayout,
+                redButton, yellowButton, greenButton
             )
 
             list.forEach { view: View ->
@@ -57,6 +58,11 @@ class MainActivity : AppCompatActivity() {
                 boxThreeText -> view.setBackgroundResource(android.R.color.holo_green_light)
                 boxFourText -> view.setBackgroundResource(android.R.color.holo_green_dark)
                 boxFiveText -> view.setBackgroundResource(android.R.color.holo_green_light)
+
+                // reassign colors to boxes 3-5
+                redButton -> boxThreeText.setBackgroundResource(R.color.red)
+                yellowButton -> boxFourText.setBackgroundResource(R.color.yellow)
+                greenButton -> boxFiveText.setBackgroundResource(R.color.green)
 
                 // color assigned to Constraint Layout
                 else -> view.setBackgroundColor(Color.LTGRAY)

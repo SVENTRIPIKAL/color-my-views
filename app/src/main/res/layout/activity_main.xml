@@ -90,6 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/contentMargin_16dp"
         android:text="@string/how_to_play"
+        android:textSize="@dimen/textSize_21sp"
         app:layout_constraintBottom_toBottomOf="@+id/gameInstructions"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -100,13 +101,50 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/contentMargin_16dp"
         android:layout_marginEnd="@dimen/contentMargin_16dp"
-        android:layout_marginBottom="@dimen/contentMargin_16dp"
+        android:layout_marginBottom="@dimen/contentMargin_50dp"
         android:text="@string/tap_the_screen_and_buttons"
+        android:textSize="@dimen/textSize_16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/howToPlay"
-        app:layout_constraintTop_toBottomOf="@+id/boxTwoText"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintTop_toBottomOf="@+id/boxTwoText" />
+
+    <Button
+        android:id="@+id/redButton"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/contentMargin_16dp"
+        android:text="@string/button_red"
+        app:layout_constraintBottom_toBottomOf="@+id/yellowButton"
+        app:layout_constraintEnd_toStartOf="@+id/yellowButton"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/yellowButton"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/contentMargin_16dp"
+        android:layout_marginBottom="@dimen/contentMargin_16dp"
+        android:text="@string/button_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/greenButton"
+        app:layout_constraintStart_toEndOf="@+id/redButton"
+        app:layout_constraintTop_toBottomOf="@+id/gameInstructions"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/greenButton"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/contentMargin_16dp"
+        android:text="@string/button_green"
+        app:layout_constraintBottom_toBottomOf="@+id/yellowButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yellowButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
