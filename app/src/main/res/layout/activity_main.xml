@@ -83,4 +83,30 @@
         app:layout_constraintStart_toEndOf="@+id/boxTwoText"
         app:layout_constraintTop_toBottomOf="@+id/boxFourText" />
 
+    <TextView
+        android:id="@+id/howToPlay"
+        style="@style/Instructions"
+        android:layout_width="@dimen/widthHeight_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/contentMargin_16dp"
+        android:text="@string/how_to_play"
+        app:layout_constraintBottom_toBottomOf="@+id/gameInstructions"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/gameInstructions"
+        style="@style/Instructions"
+        android:layout_width="@dimen/widthHeight_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/contentMargin_16dp"
+        android:layout_marginEnd="@dimen/contentMargin_16dp"
+        android:layout_marginBottom="@dimen/contentMargin_16dp"
+        android:text="@string/tap_the_screen_and_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/howToPlay"
+        app:layout_constraintTop_toBottomOf="@+id/boxTwoText"
+        app:layout_constraintVertical_bias="0.45" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
