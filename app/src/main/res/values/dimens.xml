@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="contentMargin_50dp">50dp</dimen>
     <dimen name="contentMargin_16dp">16dp</dimen>
     <dimen name="contentMargin_8dp">8dp</dimen>
     <dimen name="textSize_24sp">24sp</dimen>
+    <dimen name="textSize_21sp">21sp</dimen>
     <dimen name="textSize_18sp">18sp</dimen>
+    <dimen name="textSize_16sp">16sp</dimen>
     <dimen name="contentPadding_16dp">16dp</dimen>
     <dimen name="widthHeight_130dp">130dp</dimen>
     <dimen name="widthHeight_50dp">50dp</dimen>
